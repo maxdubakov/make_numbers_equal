@@ -40,6 +40,18 @@ def log_base(a, b):
         return -1
 
 
+def true_gcd(a, b):
+    if a == 0 or b == 0:
+        return -1
+    return gcd(a, b)
+
+
+def true_lcm(a, b):
+    if a == 0 or b == 0:
+        return -1
+    return lcm(a, b)
+
+
 def root(a, b):
     if a == 0:
         return -1
@@ -61,30 +73,41 @@ def remainder(a, b):
     return a % b
 
 
-def bitwise_and(a, b):
+# not used funcs (I consider them cheating)
+def int_division(a, b): # too powerful, solves ~90% of cases
+    if b == 0:
+        return -1
+    return a // b
+
+
+def bitwise_and(a, b): # not easy to calculate while in the car
     return a & b
 
 
-def bitwise_or(a, b):
+def bitwise_or(a, b): # not easy to calculate while in the car
     return a | b
 
 
-def bitwise_xor(a, b):
+def bitwise_xor(a, b): # not easy to calculate while in the car
     return a ^ b
 
 
-def bitwise_left_shift(a, b):
+def bitwise_left_shift(a, b): # not easy to calculate while in the car
     return a << b
 
 
-def arithmetic_mean(a, b):
+def bitwise_right_shift(a, b): # not easy to calculate while in the car + solves 100% of cases
+    return a >> b
+
+
+def arithmetic_mean(a, b): # 2 operations
     ans = (a + b) / 2
     if global_is_close(ans):
         return floor(ans)
     return -1
 
 
-def geometric_mean(a, b):
+def geometric_mean(a, b): # 2 operations
     ans = (a * b) ** 0.5
     if global_is_close(ans):
         return floor(ans)
@@ -95,15 +118,10 @@ commutative_math_funcs = [
     plus,
     minus,
     mult,
-    gcd,
-    lcm,
+    true_gcd,
+    true_lcm,
     min,
     max,
-    # arithmetic_mean,
-    # geometric_mean,
-    # bitwise_and,
-    # bitwise_or,
-    # bitwise_xor
 ]
 
 non_commutative_math_funcs = [
@@ -113,7 +131,6 @@ non_commutative_math_funcs = [
     root,
     concat,
     remainder,
-    # bitwise_left_shift,
 ]
 
 
