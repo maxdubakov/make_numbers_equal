@@ -1,4 +1,4 @@
-# 🎲 **Make Numbers Equal**
+# 🎲 **Car Number Plate Game**
 
 ## 🚍 Journey from Warsaw to Berlin
 
