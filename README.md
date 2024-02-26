@@ -20,4 +20,4 @@ This sparks a curious thought:
 
 ### 🧮 This Repository
 
-This repository delves into that question, exploring the intriguing world of numbers through a simple yet fascinating game devised on a bus journey. Dive in to discover the mathematical magic that makes numbers equal!
+This repository tries to answer that question!
